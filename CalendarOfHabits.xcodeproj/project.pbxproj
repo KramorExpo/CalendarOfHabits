@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66640F79EC42442FB3E29B22 /* Pods_CalendarOfHabits.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58AFA171F96A2D3F0A703CE6 /* Pods_CalendarOfHabits.framework */; };
 		EC27F5242513F554006DE833 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC27F5232513F554006DE833 /* AppDelegate.swift */; };
 		EC27F5262513F554006DE833 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC27F5252513F554006DE833 /* SceneDelegate.swift */; };
 		EC27F5282513F554006DE833 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC27F5272513F554006DE833 /* ViewController.swift */; };
@@ -14,9 +15,14 @@
 		EC27F52E2513F554006DE833 /* CalendarOfHabits.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC27F52C2513F554006DE833 /* CalendarOfHabits.xcdatamodeld */; };
 		EC27F5302513F557006DE833 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC27F52F2513F557006DE833 /* Assets.xcassets */; };
 		EC27F5332513F557006DE833 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC27F5312513F557006DE833 /* LaunchScreen.storyboard */; };
+		ECED465D251419C200C2885D /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECED465C251419C100C2885D /* credentials.plist */; };
+		ECED46632514223E00C2885D /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECED46622514223E00C2885D /* AuthViewController.swift */; };
+		ECED466625142E8D00C2885D /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECED466525142E8D00C2885D /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		58AFA171F96A2D3F0A703CE6 /* Pods_CalendarOfHabits.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalendarOfHabits.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B27C9FB9164321874C12DB1A /* Pods-CalendarOfHabits.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarOfHabits.release.xcconfig"; path = "Target Support Files/Pods-CalendarOfHabits/Pods-CalendarOfHabits.release.xcconfig"; sourceTree = "<group>"; };
 		EC27F5202513F554006DE833 /* CalendarOfHabits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalendarOfHabits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC27F5232513F554006DE833 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC27F5252513F554006DE833 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +32,11 @@
 		EC27F52F2513F557006DE833 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC27F5322513F557006DE833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC27F5342513F557006DE833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECED465C251419C100C2885D /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = credentials.plist; sourceTree = "<group>"; };
+		ECED46622514223E00C2885D /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		ECED466425142E8C00C2885D /* CalendarOfHabits.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CalendarOfHabits.entitlements; sourceTree = "<group>"; };
+		ECED466525142E8D00C2885D /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		EED393BF0AEF2AD405C50D3B /* Pods-CalendarOfHabits.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarOfHabits.debug.xcconfig"; path = "Target Support Files/Pods-CalendarOfHabits/Pods-CalendarOfHabits.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +44,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66640F79EC42442FB3E29B22 /* Pods_CalendarOfHabits.framework in Frameworks */,
+				ECED466625142E8D00C2885D /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		87EE12125C21BDEF7FB1B589 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECED466525142E8D00C2885D /* HealthKit.framework */,
+				58AFA171F96A2D3F0A703CE6 /* Pods_CalendarOfHabits.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1D9E4547E195143985F47E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EED393BF0AEF2AD405C50D3B /* Pods-CalendarOfHabits.debug.xcconfig */,
+				B27C9FB9164321874C12DB1A /* Pods-CalendarOfHabits.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EC27F5172513F554006DE833 = {
 			isa = PBXGroup;
 			children = (
 				EC27F5222513F554006DE833 /* CalendarOfHabits */,
 				EC27F5212513F554006DE833 /* Products */,
+				C1D9E4547E195143985F47E3 /* Pods */,
+				87EE12125C21BDEF7FB1B589 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +91,16 @@
 		EC27F5222513F554006DE833 /* CalendarOfHabits */ = {
 			isa = PBXGroup;
 			children = (
+				ECED466425142E8C00C2885D /* CalendarOfHabits.entitlements */,
 				EC27F5232513F554006DE833 /* AppDelegate.swift */,
-				EC27F5252513F554006DE833 /* SceneDelegate.swift */,
+				ECED46622514223E00C2885D /* AuthViewController.swift */,
 				EC27F5272513F554006DE833 /* ViewController.swift */,
+				EC27F5252513F554006DE833 /* SceneDelegate.swift */,
 				EC27F5292513F554006DE833 /* Main.storyboard */,
 				EC27F52F2513F557006DE833 /* Assets.xcassets */,
 				EC27F5312513F557006DE833 /* LaunchScreen.storyboard */,
 				EC27F5342513F557006DE833 /* Info.plist */,
+				ECED465C251419C100C2885D /* credentials.plist */,
 				EC27F52C2513F554006DE833 /* CalendarOfHabits.xcdatamodeld */,
 			);
 			path = CalendarOfHabits;
@@ -77,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC27F5372513F557006DE833 /* Build configuration list for PBXNativeTarget "CalendarOfHabits" */;
 			buildPhases = (
+				A2280EC06207F583AB7E4682 /* [CP] Check Pods Manifest.lock */,
 				EC27F51C2513F554006DE833 /* Sources */,
 				EC27F51D2513F554006DE833 /* Frameworks */,
 				EC27F51E2513F554006DE833 /* Resources */,
+				6F38D40889FDD887DDAEE859 /* [CP] Embed Pods Frameworks */,
+				A00FAEBF3A5CC848A78030CE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,12 +168,72 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC27F5332513F557006DE833 /* LaunchScreen.storyboard in Resources */,
+				ECED465D251419C200C2885D /* credentials.plist in Resources */,
 				EC27F5302513F557006DE833 /* Assets.xcassets in Resources */,
 				EC27F52B2513F554006DE833 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6F38D40889FDD887DDAEE859 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CalendarOfHabits/Pods-CalendarOfHabits-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CalendarOfHabits/Pods-CalendarOfHabits-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CalendarOfHabits/Pods-CalendarOfHabits-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A00FAEBF3A5CC848A78030CE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CalendarOfHabits/Pods-CalendarOfHabits-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CalendarOfHabits/Pods-CalendarOfHabits-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CalendarOfHabits/Pods-CalendarOfHabits-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2280EC06207F583AB7E4682 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CalendarOfHabits-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EC27F51C2513F554006DE833 /* Sources */ = {
@@ -143,6 +242,7 @@
 			files = (
 				EC27F5282513F554006DE833 /* ViewController.swift in Sources */,
 				EC27F5242513F554006DE833 /* AppDelegate.swift in Sources */,
+				ECED46632514223E00C2885D /* AuthViewController.swift in Sources */,
 				EC27F5262513F554006DE833 /* SceneDelegate.swift in Sources */,
 				EC27F52E2513F554006DE833 /* CalendarOfHabits.xcdatamodeld in Sources */,
 			);
@@ -286,8 +386,10 @@
 		};
 		EC27F5382513F557006DE833 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EED393BF0AEF2AD405C50D3B /* Pods-CalendarOfHabits.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CalendarOfHabits/CalendarOfHabits.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4BT6SYZ8JW;
 				INFOPLIST_FILE = CalendarOfHabits/Info.plist;
@@ -304,8 +406,10 @@
 		};
 		EC27F5392513F557006DE833 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B27C9FB9164321874C12DB1A /* Pods-CalendarOfHabits.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CalendarOfHabits/CalendarOfHabits.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4BT6SYZ8JW;
 				INFOPLIST_FILE = CalendarOfHabits/Info.plist;

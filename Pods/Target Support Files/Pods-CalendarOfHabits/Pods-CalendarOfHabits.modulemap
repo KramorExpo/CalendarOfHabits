@@ -1,0 +1,6 @@
+framework module Pods_CalendarOfHabits {
+  umbrella header "Pods-CalendarOfHabits-umbrella.h"
+
+  export *
+  module * { export * }
+}
